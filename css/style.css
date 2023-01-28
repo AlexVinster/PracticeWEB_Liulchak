@@ -1,0 +1,13 @@
+.vidpos {
+    position: fixed;
+    top: 150px;
+    right: 10px;
+}
+.picpos {
+    position: static;
+    top: 10px;
+    text-align: center;
+}
+.rampos {
+    width: 300px;
+}

@@ -1,0 +1,875 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600|Space+Mono:400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 15px;
+  margin-right: 15px;
+  background: #2b2b2b;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+a:hover {
+  transform: scale(0.9);
+  /* -10% */
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  margin-left: 5px;
+  justify-content: space-between;
+  align-self: stretch;
+  background-color: #2b2b2b;
+}
+
+.mobile-logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.mobile-siteName {
+  display: flex;
+  flex-grow: 1;
+  fill: white;
+  text-align: center;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.mobile-storefont {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.mobile-burger-menu {
+  width: 24px;
+  height: 24px;
+}
+
+/* HERO SECTION */
+.mobile-hero-section-frame {
+  display: flex;
+  /* width: 1050px; */
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.mobile-hero-section {
+  display: flex;
+  /* padding: 80px 195px; */
+  /* margin-left: 30px; */
+  margin-top: 45px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  background-color: #2B2B2B;
+}
+
+.mobile-hero-text-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  flex: 1 0 0;
+}
+
+.mobile-headline-subhead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.mobile-headline {
+  display: flex;
+  /* width: 510px; */
+  justify-content: center;
+  color: #FFF;
+  margin-bottom: 0;
+
+  /* H1 - Work Sans */
+  font-family: Work Sans;
+  font-size: 67px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  /* 73.7px */
+  text-transform: capitalize;
+}
+
+.mobile-subhead {
+  color: #FFF;
+  /* Body Text- Work Sans */
+  font-family: Work Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 35.2px */
+}
+
+.mobile-hero-body-button {
+  /* width: 100%; */
+  display: flex;
+  height: 60px;
+  padding: 0px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: #A259FF;
+}
+
+.mobile-hero-body-button-text,
+.mobile-view-rankings-button-text {
+  /* width: 100%; */
+  height: 60px;
+  color: #FFF;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 22.4px */
+}
+
+.mobile-hero-body-button-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.mobile-highlited-NFT {
+  display: flex;
+  height: 510px;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 0;
+}
+
+.mobile-highlited-picture {
+  /* width: 510px; */
+  height: 401px;
+  align-self: stretch;
+  border-radius: 20px 20px 0px 0px;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.mobile-frame-230 {
+  display: flex;
+  height: 109px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 0px 0px 20px 20px;
+  background: #3B3B3B;
+}
+
+.mobile-frame-230-text,
+.mobile-collection-info-name,
+.mobile-artists-info-text,
+.nft-name-text {
+  align-self: stretch;
+  color: #FFF;
+  margin: 0;
+  /* H5 - Work Sans */
+  font-family: Work Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 30.8px */
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.mobile-artist-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 0 0 20px 20px;
+}
+
+.mobile-avatar {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.mobile-artist-info {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-highlited-text {
+  flex: 1 1 0;
+  color: #FFF;
+
+  /* Base(Body) - Work Sans */
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 22.4px */
+}
+
+.mobile-additional-info {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  gap: 5px;
+  height: auto;
+  position: relative;
+}
+
+.mobile-total-sale,
+.mobile-total-auctions,
+.mobile-total-artists {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: transparent;
+  border-radius: 20px;
+  flex: 1;
+  height: auto;
+  position: relative;
+}
+
+.mobile-total-info-name,
+.mobile-additional-info-sales {
+  color: white;
+
+  /* Base(Body) - Work Sans */
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 22.4px */
+}
+
+.mobile-total-info-head,
+.browse-categories-headline {
+  color: #FFF;
+  /* width: 150px; */
+  height: auto;
+  /* H4 - Space Mono */
+  font-family: Space Mono;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  /* 39.2px */
+  text-transform: capitalize;
+  margin: 0;
+}
+
+
+/* TRENDING COLLECTION */
+.mobile-collection-slider {
+  display: flex;
+  /* width: 315px; */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #2B2B2B;
+}
+
+.mobile-trending-collection {
+  display: flex;
+  /* margin-left: 30px; */
+  padding: 80px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
+  background-color: #2B2B2B;
+}
+
+.mobile-section-headline {
+  display: flex;
+  /* width: 1046px; */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.mobile-collection-card {
+  display: flex;
+  /* width: 330px; */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #2B2B2B;
+}
+
+.mobile-headline-sections {
+  flex: 1 0 0;
+  color: #FFF;
+  margin-bottom: 0;
+
+  /* H3 - Work Sans */
+  font-family: Work Sans;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 45.6px */
+  text-transform: capitalize;
+}
+
+.mobile-collection-card {
+  display: flex;
+  /* width: 330px; */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #2B2B2B;
+}
+
+.mobile-photos-numbers {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.mobile-primary-photo-placeholder {
+  height: 315px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.mobile-secondary-photo-placeholder {
+  height: 100px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.mobile-frame-secondary {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.mobile-number_additional_NFT {
+  display: flex;
+  height: 100px;
+  /* width: 100px; */
+  padding: 32px 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  background-color: #A259FF;
+}
+
+.mobile-number_additional_NFT_text {
+  color: #FFF;
+  text-align: center;
+
+  /* H5 - Space Mono */
+  font-family: Space Mono;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  /* 35.2px */
+  text-transform: capitalize;
+  padding: 0;
+}
+
+.mobile-collection-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.mobile-collection-info-name {
+  margin-bottom: 10px;
+}
+
+.mobile-collection-info-artist-name {
+  color: #FFF;
+
+  /* Base(Body) - Work Sans */
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 22.4px */
+}
+
+/*TOP RATED ARTISTS*/
+
+.mobile-top-rated-artists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-left: 30px; */
+  gap: 40px;
+  align-self: stretch;
+  background: #2B2B2B;
+  margin-bottom: 40px;
+}
+
+.mobile-artists-cards-row {
+  /* margin-left: 5%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  /* width: 90%; */
+}
+
+.mobile-artists-card {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: #3B3B3B;
+}
+
+.mobile-artists-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  gap: 20px;
+}
+
+.mobile-artists-avatar-asset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.mobile-artists-avatar-pref {
+  border-radius: 100px;
+  background: lightgray 50% / cover no-repeat;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.mobile-artists-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  flex: 1 0 0;
+}
+
+.mobile-artists-additional-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  align-self: stretch;
+}
+
+.mobile-additional-info-text {
+  color: #858584;
+  /* Base(Body) - Work Sans */
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.mobile-artists-ranking-number {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -5px;
+  right: auto;
+  top: -8px;
+  border-radius: 50%;
+  background: #2B2B2B;
+}
+
+.mobile-artists-ranking-number-text {
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  color: #858584;
+  text-align: center;
+
+  /* Base (Body) - Space Mono */
+  font-family: Space Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 22.4px */
+}
+
+.mobile-view-rankings-button,
+.discover-nft-see-all-button {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #A259FF;
+  width: 100%;
+}
+
+.mobile-view-rankings-button img {
+  margin-right: 12px;
+}
+
+.mobile-view-rankings-button-text {
+  margin-top: 40px;
+}
+
+/*BROWSE CATEGORIES*/
+.browse-categories {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(315px, 1fr)); */
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.browse-categories-section-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.browse-categories-headline {
+  font-weight: 600;
+}
+
+.category-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.category-cards-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 20px;
+  background: #3B3B3B;
+  position: relative;
+}
+
+.category-card-photo-icon {
+  align-self: stretch;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+}
+
+.category-card-image-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.category-card-image-placeholder img {
+  align-self: stretch;
+  border-radius: 20px 20px 0 0;
+  height: 100%;
+  width: 100%;
+}
+
+.category-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px 20px 0px 0px;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(7.5px);
+  /*add SAFARI!!!*/
+}
+
+.category-card-name {
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  margin-right: auto;
+}
+
+.mobile-highlited-text {
+  font-weight: 600;
+}
+
+/*НА SAFARI BLUR НЕ РОБИТЬ*/
+
+
+/* DISCOVER MORE NFTs */
+
+.discover-nft-section {
+  display: flex;
+  padding: 40px 0px 60px 0px;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 40px;
+  align-self: stretch;
+}
+
+.discover-nft-section-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.discover-nft-section-headline-text {
+  color: #FFF;
+
+  /* H4 - Work Sans */
+  font-family: Work Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 39.2px */
+  text-transform: capitalize;
+}
+
+.cards-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.nft-card-row {
+  display: flex;
+  /* width: 315px; */
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.nft-card {
+  display: flex;
+  /* height: 402px; */
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: 20px;
+  background: #3B3B3B;
+}
+
+.nft-card img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  height: 100%;
+  width: 100%;
+
+  border-radius: 20px 20px 0px 0px;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.nft-info {
+  display: flex;
+  padding: 20px 20px 25px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  align-self: stretch;
+}
+
+.artist-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  align-self: stretch;
+}
+
+/* .nft-name-text {
+
+} */
+
+.artist-avatar-name {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.artist-avatar {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.artist-avatar-asset {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-avatar img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 120px;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.artist-name {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+}
+
+.artist-name {
+  color: #FFF;
+
+  /* Base (Body) - Space Mono */
+  font-family: Space Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 22.4px */
+}
+
+.nft-additional-info {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.nft-price {
+  display: flex;
+  padding-right: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+  margin-top: 20px;
+}
+
+.nft-price-head-text,
+.nft-highest-bit-head-text,
+.nft-price-text,
+.nft-highest-bit-text {
+  color: #858584;
+
+  /* Caption - Space Mono */
+  font-family: Space Mono;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  /* 13.2px */
+
+  align-self: stretch;
+}
+
+.nft-price-text,
+.nft-highest-bit-text {
+  color: white;
+}
+
+.nft-highest-bit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.discover-nft-see-all-button {
+  gap: 12px;
+}
+
+.discover-nft-see-all-button-text {
+  color: #FFF;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 22.4px */
+}

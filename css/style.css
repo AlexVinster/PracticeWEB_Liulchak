@@ -1885,4 +1885,9 @@ footer {
     justify-content: space-between;
     margin-right: 250px;
   }
+
+  .mobile-section-headline {
+    margin-left: 0;
+    width: auto;
+  }
 }

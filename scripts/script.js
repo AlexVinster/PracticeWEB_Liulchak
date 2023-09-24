@@ -78,11 +78,11 @@ function getOSInfo(userAgent) {
       } else if (platform === 'Android') {
         // Визначення Android
         osVersion = `Android ${userAgent.match(/Android (\d+\.\d+)/i)[1]}`;
-        return `${platform} ${osVersion}`;
+        return `<span style="color: ${osVersion === 'Android 11.0' ? 'red' : 'green'}">${platform} ${osVersion}</span>`;
       } else if (platform === 'iOS') {
         osVersion = `iOS ${userAgent.match(/OS (\d+[._\d+]*) like Mac OS X/i)[1]}`;
       }
-      return `${platform} ${osVersion}`;
+      return `<span style="color: ${osVersion === 'Windows 10' ? 'red' : 'green'}">${platform} ${osVersion}</span>`;
     }
   }
   return 'Невідома ОС';
@@ -107,7 +107,7 @@ function getBrowserInfo(userAgent) {
   for (const browser in browsers) {
     if (browsers[browser].test(userAgent)) {
       const version = userAgent.match(/(?:Chrome|Firefox|Edge|Safari|Opera|IE)\/([\d.]+)/i);
-      return `${browser} ${version ? version[1] : ''}`;
+      return `<span style="color: ${browser === 'Chrome' && version && version[1] === '117.0.0.0' ? 'green' : 'red'}">${browser} ${version ? version[1] : ''}</span>`;
     }
   }
   return 'Невідомий браузер';
@@ -118,8 +118,8 @@ const messageElement = document.getElementById('message');
 
 // Вивести повідомлення
 messageElement.innerHTML = `
-  Ваш Браузер: <span style="color: blue;">${browserInfo}</span> на базі <span style="color: green">${osInfo}</span>.<br>
-  Рекомендований браузер: <span style="color: blue;">Google Chrome 117.0.0</span> на базі ОС <span style="color: green;">Windows 10</span>.<br>
+  Ваш Браузер: ${browserInfo} на базі ${osInfo}.<br>
+  Рекомендований браузер: <span style="color: ${browserInfo.includes('red') && osInfo.includes('red') ? 'red' : 'green'}">Chrome 117.0.0.0</span> на базі ОС <span style="color: green;">Windows 10/Android</span>.<br>
   Тестування на інших платформах не проводилось і розробник не несе відповідальності за коректне відображення вмісту на інших конфігураціях. Сайт знаходиться в бета-версії та в подальшій оптимізації. Дякую!
 `;
 

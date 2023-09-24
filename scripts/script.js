@@ -119,7 +119,7 @@ const messageElement = document.getElementById('message');
 // Вивести повідомлення
 messageElement.innerHTML = `
   Ваш Браузер: ${browserInfo} на базі ${osInfo}.<br>
-  Рекомендований браузер: <span style="color: ${browserInfo.includes('red') && osInfo.includes('red') ? 'red' : 'green'}">Chrome 117.0.0.0</span> на базі ОС <span style="color: ${browserInfo.includes('red') && osInfo.includes('red') ? 'red' : 'green'}">"Windows 10/Android</span>.<br>
+  Рекомендований браузер: <span style="color: ${browserInfo.includes('red') && osInfo.includes('red') ? 'red' : 'green'}">Chrome 117.0.0.0</span> на базі ОС <span style="color: ${browserInfo.includes('red') && osInfo.includes('red') ? 'red' : 'green'}">Windows 10/Android</span>.<br>
   Тестування на інших платформах не проводилось і розробник не несе відповідальності за коректне відображення вмісту на інших конфігураціях. Сайт знаходиться в бета-версії та в подальшій оптимізації. Дякую!
 `;
 

@@ -1,0 +1,918 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NFT Marketplace</title>
+      <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+
+<body>
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <span class="close" id="close">&times;</span>
+            <p id="message"></p>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="close-button">
+            <span>×</span>
+        </div>
+        <ul class="mobile-subhead">
+            <li><a href="#"><img src="https://img.icons8.com/dusk/64/marketplace-hub.png"
+                        alt="online-store">Marketplace</a></li>
+            <li><a href="#"><img src="https://img.icons8.com/color/48/leaderboard.png" alt="leaderboard">Rankings</a>
+            </li>
+            <li><a href="#"><img src="https://img.icons8.com/color/48/wallet--v1.png" alt="wallet--v1">Connect a
+                    wallet</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <nav>
+            <div class="mobile-logo">
+                <img src="img/nav/Storefront.webp" alt="Storefront">
+                <div class="mobile-siteName">
+                    <img src="img/nav/NFTMarketplace.webp" alt="NFT Marketplace">
+                </div>
+            </div>
+            <div class="mobile-menu-toggle">
+                <img src="img/nav/BurgerMenu.webp" alt="Burger Menu" class="mobile-burger-menu">
+            </div>
+        </nav>
+        <div class="nav navigation">
+            <div class="nav logo Storefont">
+                <img src="img/nav/Storefront.webp" alt="Storefont">
+            </div>
+            <div class="nav logo siteName">
+                <img src="img/nav/NFTMarketplace.webp" alt="NFT Marketplace">
+            </div>
+            <div class="nav nav-menu">
+                <a class="nav-menu-button nav-menu-text" href="#">Marketplace</a>
+                <a class="nav-menu-button nav-menu-text" href="#">Rankings</a>
+                <a class="nav-menu-button nav-menu-text" href="#">Connect a wallet</a>
+                <button class="nav login-button login-text">
+                    <img class="login-icon" src="img/nav/User.webp" alt="Login">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+        <div class="wrapper-cent">
+            <section class="animation-up active">
+                <div class="mobile-hero-section">
+                    <div class="mobile-hero-section-frame">
+                        <div class="mobile-hero-text-buttons subhead">
+                            <div class="mobile-headline-subhead">
+                                <h1 class="mobile-hero-text-buttons mobile-headline">Discover digital art &amp; Collect
+                                    NFTs
+                                </h1>
+                                <p class="mobile-subhead">NFT marketplace UI created with Anima for Figma. Collect, buy
+                                    and
+                                    sell
+                                    art
+                                    from more than 20k NFT
+                                    artists.</p>
+                            </div>
+                            <div class="mobile-highlited-NFT">
+                                <img class="mobile-highlited-picture" src="img/hero-section/SpaceWalking.webp"
+                                    alt="Space Walking">
+                                <div class="mobile-frame-230 mobile-artist-card mobile-highlited-text">
+                                    <h5 class="mobile-frame-230-text">Space Walking</h5>
+                                    <div class="mobile-artist-info">
+                                        <img class="mobile-avatar" src="img/hero-section/AvatarPlaceholder.webp"
+                                            alt="Avatar">
+                                        <p>Animakid</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="mobile-hero-body-button mobile-hero-body-button-text" href="#">
+                                <img class="mobile-hero-body-button-icon" src="img/hero-section/RocketLaunch.webp"
+                                    alt="Get Started">
+                                <p>Get Started</p>
+                            </a>
+                            <div class="mobile-additional-info">
+                                <div class="mobile-total-sale">
+                                    <p class="mobile-total-info-head">240k+ </p>
+                                    <p class="mobile-total-info-name">Total Sale</p>
+                                </div>
+                                <div class="mobile-total-sale">
+                                    <p class="mobile-total-info-head">100k+</p>
+                                    <p class="mobile-total-info-name">Auctions</p>
+                                </div>
+                                <div class="mobile-total-sale">
+                                    <p class="mobile-total-info-head">240k+</p>
+                                    <p class="mobile-total-info-name">Artists</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-highlited-NFT-tablet">
+                            <img class="mobile-highlited-picture" src="img/hero-section/SpaceWalking.webp"
+                                alt="Space Walking">
+                            <div class="mobile-frame-230 mobile-artist-card mobile-highlited-text">
+                                <h5 class="mobile-frame-230-text">Space Walking</h5>
+                                <div class="mobile-artist-info">
+                                    <img class="mobile-avatar" src="img/hero-section/AvatarPlaceholder.webp"
+                                        alt="Avatar">
+                                    <p>Animakid</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="animation-up active">
+                <div class="mobile-trending-collection">
+                    <div class="mobile-headline-subhead">
+                        <h3 class="mobile-headline-sections">Trending Collection</h3>
+                        <p class="mobile-subhead">Checkout our weekly updated trending collection.</p>
+                    </div>
+                    <div class="mobile-collection-slider">
+                        <div class="mobile-collection-card">
+                            <div class="mobile-photos-numbers">
+                                <a href="#"> <img src="img/Trending-collection/PrimaryPhotoPlaceholder1.webp"
+                                        alt="Primary Placeholder" class="mobile-primary-photo-placeholder"> </a>
+                            </div>
+                            <div class="mobile-frame-secondary">
+                                <a href="#"> <img src="img/Trending-collection/secondary1.webp"
+                                        alt="Secondary Placeholder NFT" class="mobile-secondary-photo-placeholder"> </a>
+                                <a href="#"> <img src="img/Trending-collection/secondary2.webp"
+                                        alt="Secondary Placeholder beer NFT" class="mobile-secondary-photo-placeholder">
+                                </a>
+                                <a href="#">
+                                    <div class="mobile-number_additional_NFT mobile-number_additional_NFT_text">1025+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mobile-collection-info">
+                                <div class="mobile-headline-subline">
+                                    <h5 class="mobile-collection-info-name">DSGN Animals</h5>
+                                    <a href="#" class="mobile-artist-info"> <img class="mobile-avatar"
+                                            src="img/Trending-collection/artist-collection-card-info.webp" alt="Avatar">
+                                        <p class="mobile-collection-info-artist-name">MrFox</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-collection-card-tablet">
+                            <div class="mobile-photos-numbers">
+                                <a href="#"> <img src="img/Trending-collection/primary2.webp" alt="Primary Placeholder"
+                                        class="mobile-primary-photo-placeholder"></a>
+                            </div>
+                            <div class="mobile-frame-secondary">
+                                <a href="#"> <img src="img/Trending-collection/sec1.webp" alt="Secondary Placeholder NFT"
+                                        class="mobile-secondary-photo-placeholder"> </a>
+                                <a href="#"> <img src="img/Trending-collection/sec2.webp"
+                                        alt="Secondary Placeholder beer NFT"
+                                        class="mobile-secondary-photo-placeholder"></a>
+                                <a href="#">
+                                    <div class="mobile-number_additional_NFT mobile-number_additional_NFT_text">1025+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mobile-collection-info">
+                                <div class="mobile-headline-subline">
+                                    <h5 class="mobile-collection-info-name">Magic Mushrooms</h5>
+                                    <a href="#" class="mobile-artist-info"> <img class="mobile-avatar"
+                                            src="img/Trending-collection/avatar.webp" alt="Avatar">
+                                        <p class="mobile-collection-info-artist-name">Shroomie</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-collection-card-pc">
+                            <div class="mobile-photos-numbers">
+                                <a href="#"> <img src="img/Trending-collection/pr3.webp" alt="Primary Placeholder"
+                                        class="mobile-primary-photo-placeholder"></a>
+                            </div>
+                            <div class="mobile-frame-secondary">
+                                <a href="#"> <img src="img/Trending-collection/sec3.webp" alt="Secondary Placeholder NFT"
+                                        class="mobile-secondary-photo-placeholder"> </a>
+                                <a href="#"> <img src="img/Trending-collection/sec4.webp"
+                                        alt="Secondary Placeholder beer NFT"
+                                        class="mobile-secondary-photo-placeholder"></a>
+                                <a href="#">
+                                    <div class="mobile-number_additional_NFT mobile-number_additional_NFT_text">1025+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mobile-collection-info">
+                                <div class="mobile-headline-subline">
+                                    <h5 class="mobile-collection-info-name">Disco Machines</h5>
+                                    <a href="#" class="mobile-artist-info"> <img class="mobile-avatar"
+                                            src="img/Trending-collection/avatar3.webp" alt="Avatar">
+                                        <p class="mobile-collection-info-artist-name">BeKind2Robots</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="animation-up active">
+                <div class="mobile-top-rated-artists">
+                    <div class="flex-row">
+                        <div class="mobile-headline-subhead">
+                            <h3 class="mobile-headline-sections">Top Creators</h3>
+                            <p class="mobile-subhead">Checkout Top Rated Creators on the NFT Marketplace</p>
+                        </div>
+                        <a href="#" class="tablet-view-rankings-button">
+                            <img src="img/top-creators/RocketLaunch.webp" alt="RocketLaunch">
+                            <p class="mobile-view-rankings-button-text">View Rankings</p>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="center">
+    <div class="mobile-artists-cards-row pc-artists-cards-row">
+        <a href="#" class="mobile-artists-card pc-artists-card">
+            <div class="mobile-artists-avatar">
+                <div class="mobile-artists-ranking-number">
+                    <p class="mobile-artists-ranking-number-text">1</p>
+                </div>
+                <div class="mobile-artists-avatar-asset">
+                    <img class="mobile-artists-avatar-pref" src="img/top-creators/Keepitreal.webp" alt="Keepitreal">
+                </div>
+            </div>
+            <div class="mobile-artists-info">
+                <p class="mobile-artists-info-text">Keepitreal</p>
+                <div class="mobile-artists-addtitional-info">
+                    <p class="mobile-additional-info-text">Total Sales:</p>
+                    <p class="mobile-additional-info-sales">34.53 ETH</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="mobile-artists-card">
+            <div class="mobile-artists-avatar">
+                <div class="mobile-artists-ranking-number">
+                    <p class="mobile-artists-ranking-number-text">2</p>
+                </div>
+                <div class="mobile-artists-avatar-asset">
+                    <img class="mobile-artists-avatar-pref" src="img/top-creators/DigiLab.webp" alt="DigiLab">
+                </div>
+            </div>
+            <div class="mobile-artists-info">
+                <p class="mobile-artists-info-text">DigiLab</p>
+                <div class="mobile-artists-addtitional-info">
+                    <p class="mobile-additional-info-text">Total Sales:</p>
+                    <p class="mobile-additional-info-sales">32.13 ETH</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="mobile-artists-card">
+            <div class="mobile-artists-avatar">
+                <div class="mobile-artists-ranking-number">
+                    <p class="mobile-artists-ranking-number-text">3</p>
+                </div>
+                <div class="mobile-artists-avatar-asset">
+                    <img class="mobile-artists-avatar-pref" src="img/top-creators/GravitiOne.webp" alt="GravitiOne">
+                </div>
+            </div>
+            <div class="mobile-artists-info">
+                <p class="mobile-artists-info-text">GravityOne</p>
+                <div class="mobile-artists-addtitional-info">
+                    <p class="mobile-additional-info-text">Total Sales:</p>
+                    <p class="mobile-additional-info-sales">28.93 ETH</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="mobile-artists-card">
+            <div class="mobile-artists-avatar">
+                <div class="mobile-artists-ranking-number">
+                    <span class="mobile-artists-ranking-number-text">4</span>
+                </div>
+                <div class="mobile-artists-avatar-asset">
+                    <img class="mobile-artists-avatar-pref" src="img/top-creators/Juanie.webp" alt="Juanie">
+                </div>
+            </div>
+            <div class="mobile-artists-info">
+                <p class="mobile-artists-info-text">Juanie</p>
+                <div class="mobile-artists-addtitional-info">
+                    <p class="mobile-additional-info-text">Total Sales:</p>
+                    <p class="mobile-additional-info-sales">25.30 ETH</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="mobile-artists-card">
+            <div class="mobile-artists-avatar">
+                <div class="mobile-artists-ranking-number">
+                    <span class="mobile-artists-ranking-number-text">5</span>
+                </div>
+                <div class="mobile-artists-avatar-asset">
+                    <img class="mobile-artists-avatar-pref" src="img/top-creators/BlueWhale.webp" alt="BlueWhale">
+                </div>
+            </div>
+            <div class="mobile-artists-info">
+                <p class="mobile-artists-info-text">BlueWhale</p>
+                <div class="mobile-artists-addtitional-info">
+                    <p class="mobile-additional-info-text">Total Sales:</p>
+                    <p class="mobile-additional-info-sales">22.22 ETH</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="mobile-view-rankings-button">
+            <img src="img/top-creators/RocketLaunch.webp" alt="RocketLaunch">
+            <p class="mobile-view-rankings-button-text">View Rankings</p>
+        </a>
+    </div>
+</div>
+    <div class="wrapper">
+        <div class="wrapper-cent">
+            </section>
+            <section class="animation-up active">
+                <div class="browse-categories">
+                    <div class="browse-categories-section-headline">
+                        <h4 class="browse-categories-headline">browse categories</h4>
+                    </div>
+                    <div class="category-cards">
+                        <div class="category-cards-row">
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/art_back.webp" alt="Art background">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/PaintBrush.webp" alt="Art">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <p class="mobile-highlited-text">Art</p>
+                                </div>
+                            </a>
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/monkey.webp" alt="Background colectibles">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/Swatches.webp" alt="Colectibles">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <p class="mobile-highlited-text">Colectibles</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category-cards-row">
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/back2.webp" alt="Music">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/MusicNotes.webp" alt="Notes">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <p class="mobile-highlited-text">Music</p>
+                                </div>
+                            </a>
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/back3.webp" alt="Photography">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/Camera.webp" alt="Photo">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <span class="mobile-highlited-text">Photography</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category-cards-row">
+                            <a class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/back4.webp" alt="Videos">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/VideoCamera.webp" alt="Video Camera">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <span class="mobile-highlited-text">Video</span>
+                                </div>
+                            </a>
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/back5.webp" alt="Utility back">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/MagicWand.webp" alt="Magic Wand">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <span class="mobile-highlited-text">Utility</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category-cards-row">
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/back6.webp" alt="Sport">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/Basketball.webp" alt="Basketball">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <span class="mobile-highlited-text">Sport</span>
+                                </div>
+                            </a>
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/back7.webp" alt="Virtual Worlds">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/Planet.webp" alt="Planet">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <span class="mobile-highlited-text">Virtual Worlds</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--ПЛАНШЕТНА ВЕРСІЯ-->
+                    <div class="category-cards-tablet">
+                        <div class="category-cards-row">
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/art_back.webp" alt="Art background">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/PaintBrush.webp" alt="Art">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <p class="mobile-highlited-text">Art</p>
+                                </div>
+                            </a>
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/monkey.webp" alt="Background colectibles">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/Swatches.webp" alt="Colectibles">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <p class="mobile-highlited-text">Colectibles</p>
+                                </div>
+                            </a>
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/back2.webp" alt="Music">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/MusicNotes.webp" alt="Notes">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <p class="mobile-highlited-text">Music</p>
+                                </div>
+                            </a>
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/back3.webp" alt="Photography">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/Camera.webp" alt="Photo">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <span class="mobile-highlited-text">Photography</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category-cards-row">
+                            <a class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/back4.webp" alt="Videos">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/VideoCamera.webp" alt="Video Camera">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <span class="mobile-highlited-text">Video</span>
+                                </div>
+                            </a>
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/back5.webp" alt="Utility back">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/MagicWand.webp" alt="Magic Wand">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <span class="mobile-highlited-text">Utility</span>
+                                </div>
+                            </a>
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/back6.webp" alt="Sport">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/Basketball.webp" alt="Basketball">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <span class="mobile-highlited-text">Sport</span>
+                                </div>
+                            </a>
+                            <a href="#" class="category-card">
+                                <div class="category-card-photo-icon">
+                                    <div class="category-card-image-placeholder">
+                                        <img src="img/browse-categories/back7.webp" alt="Virtual Worlds">
+                                    </div>
+                                    <div class="category-card-icon">
+                                        <img src="img/browse-categories/Planet.webp" alt="Planet">
+                                    </div>
+                                </div>
+                                <div class="category-card-name">
+                                    <span class="mobile-highlited-text">Virtual Worlds</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="discover-nft-section animation-up active">
+                <div class="flex-row">
+                    <div class="mobile-section-headline">
+                        <div class="discover-nft-section-headline">
+                            <h5 class="discover-nft-section-headline-text">Discover more NFTs</h5>
+                            <h5 class="mobile-subhead">Explore new trending NFTs</h5>
+                        </div>
+                    </div>
+                    <a href="#" class="discover-nft-see-all-button-tablet">
+                        <img src="img/discover-nfts/Eye.webp" alt="Eye">
+                        <div class="discover-nft-see-all-button-text">See all</div>
+                    </a>
+                </div>
+                <div class="flex-row-mobile flex-row">
+                    <a class="cards-frame" href="#">
+                        <div class="nft-card-row">
+                            <div class="nft-card">
+                                <img src="img/discover-nfts/nft1.webp" alt="Galaxy">
+                                <div class="nft-info">
+                                    <h5 class="nft-name-text">Distant Galaxy</h5>
+                                    <div class="artist-info">
+                                        <div class="artist-avatar-name">
+                                            <div class="artist-avatar">
+                                                <div class="artist-avatar-asset">
+                                                    <img src="img/discover-nfts/artist1.webp" alt="MoonDancer">
+                                                </div>
+                                            </div>
+                                            <div class="artist-name">
+                                                <h5>MoonDancer</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nft-additional-info">
+                                        <div class="nft-price">
+                                            <h5 class="nft-price-head-text">Price</h5>
+                                            <h5 class="nft-price-text">1.63 ETH</h5>
+                                        </div>
+                                        <div class="nft-highest-bit">
+                                            <h5 class="nft-highest-bit-head-text">Highest Bit</h5>
+                                            <h5 class="nft-highest-bit-text">0.33 wETH</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="cards-frame animation-up active" href="#">
+                        <div class="nft-card-row">
+                            <div class="nft-card">
+                                <img src="img/discover-nfts/nft2.webp" alt="Galaxy">
+                                <div class="nft-info">
+                                    <h5 class="nft-name-text">Life on edena</h5>
+                                    <div class="artist-info">
+                                        <div class="artist-avatar-name">
+                                            <div class="artist-avatar">
+                                                <div class="artist-avatar-asset">
+                                                    <img src="img/discover-nfts/artist2.webp" alt="MoonDancer">
+                                                </div>
+                                            </div>
+                                            <div class="artist-name">
+                                                <h5>NebulaKid</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nft-additional-info">
+                                        <div class="nft-price">
+                                            <h5 class="nft-price-head-text">Price</h5>
+                                            <h5 class="nft-price-text">1.63 ETH</h5>
+                                        </div>
+                                        <div class="nft-highest-bit">
+                                            <h5 class="nft-highest-bit-head-text">Highest Bit</h5>
+                                            <h5 class="nft-highest-bit-text">0.33 wETH</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="cards-frame animation-up active" href="#">
+                        <div class="nft-card-row">
+                            <div class="nft-card">
+                                <img src="img/discover-nfts/nft3.webp" alt="Galaxy">
+                                <div class="nft-info">
+                                    <h5 class="nft-name-text">AstroFiction</h5>
+                                    <div class="artist-info">
+                                        <div class="artist-avatar-name">
+                                            <div class="artist-avatar">
+                                                <div class="artist-avatar-asset">
+                                                    <img src="img/discover-nfts/artist2.webp" alt="MoonDancer">
+                                                </div>
+                                            </div>
+                                            <div class="artist-name">
+                                                <h5>Spaceone</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nft-additional-info">
+                                        <div class="nft-price">
+                                            <h5 class="nft-price-head-text">Price</h5>
+                                            <h5 class="nft-price-text">1.63 ETH</h5>
+                                        </div>
+                                        <div class="nft-highest-bit">
+                                            <h5 class="nft-highest-bit-head-text">Highest Bit</h5>
+                                            <h5 class="nft-highest-bit-text">0.33 wETH</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="#" class="discover-nft-see-all-button">
+                    <img src="img/discover-nfts/Eye.webp" alt="Eye">
+                    <div class="discover-nft-see-all-button-text">See all</div>
+                </a>
+            </section>
+        </div>
+    </div>
+    <section class="nft-highlight">
+        <img src="img/nft-highlight/NFT_Highlight.webp" alt="">
+        <div class="nft-highlight-info">
+            <div class="nft-frame-240">
+                <div class="nft-artist-name-button">
+                    <a href="#" class="artist-card">
+                        <div class="artist-avatar-name">
+                            <div class="artist-avatar">
+                                <div class="artist-avatar-asset">
+                                    <img src="img/nft-highlight/avatar.webp" alt="MoonDancer">
+                                </div>
+                            </div>
+                            <div class="artist-name">
+                                <h5>Shroomie</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="h3-text">Magic Mashrooms</h3>
+                    <div class="auction-timer">
+                        <div class="auction-timer-text">
+                            Auction ends in:
+                        </div>
+                        <div class="timer">
+                            <div class="hours">
+                                <h3 class="h3-text">59</h3>
+                                <div class="auction-timer-text">Hours</div>
+                            </div>
+                            <h4 class="h4-text">:</h4>
+                            <div class="minutes">
+                                <h3 class="h3-text">59</h3>
+                                <div class="auction-timer-text">Minutes</div>
+                            </div>
+                            <h4 class="h4-text">:</h4>
+                            <div class="seconds">
+                                <h3 class="h3-text">59</h3>
+                                <div class="auction-timer-text">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="$" class="nft-highlight-button">
+                        <img src="img/nft-highlight/Eye(1).webp" alt="Eye">
+                        <div class="nft-highlight-button-text">See NFT</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="nft-highlight-pc animation-up active">
+        <img src="img/nft-highlight/NFT_Highlight.webp" alt="">
+        <div class="nft-highlight-info">
+            <div class="nft-frame-240">
+                <div class="flex-row">
+                    <div class="nft-artist-name-button">
+                        <a href="#" class="artist-card">
+                            <div class="artist-avatar-name">
+                                <div class="artist-avatar">
+                                    <div class="artist-avatar-asset">
+                                        <img src="img/nft-highlight/avatar.webp" alt="MoonDancer">
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    <h5>Shroomie</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="h3-text">Magic Mashrooms</h3>
+                        <div class="auction-timer">
+                            <div class="auction-timer-text">
+                                Auction ends in:
+                            </div>
+                            <div class="timer">
+                                <div class="hours">
+                                    <h3 class="h3-text">59</h3>
+                                    <div class="auction-timer-text">Hours</div>
+                                </div>
+                                <h4 class="h4-text">:</h4>
+                                <div class="minutes">
+                                    <h3 class="h3-text">59</h3>
+                                    <div class="auction-timer-text">Minutes</div>
+                                </div>
+                                <h4 class="h4-text">:</h4>
+                                <div class="seconds">
+                                    <h3 class="h3-text">59</h3>
+                                    <div class="auction-timer-text">Seconds</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="$" class="nft-highlight-button">
+                            <img src="img/nft-highlight/Eye(1).webp" alt="Eye">
+                            <div class="nft-highlight-button-text">See NFT</div>
+                        </a>
+                    </div>
+                    <div class="auction-timer-pc">
+                        <div class="auction-timer-text">
+                            Auction ends in:
+                        </div>
+                        <div class="timer-pc">
+                            <div class="hours">
+                                <h3 class="h3-text">59</h3>
+                                <div class="auction-timer-text">Hours</div>
+                            </div>
+                            <h4 class="h4-text">:</h4>
+                            <div class="minutes">
+                                <h3 class="h3-text">59</h3>
+                                <div class="auction-timer-text">Minutes</div>
+                            </div>
+                            <h4 class="h4-text">:</h4>
+                            <div class="seconds">
+                                <h3 class="h3-text">59</h3>
+                                <div class="auction-timer-text">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="wrapper">
+        <div class="wrapper-cent">
+            <section class="how-works animation-up active">
+                <div class="discover-nft-section-headline">
+                    <h4 class="discover-nft-section-headline-text">How it Works</h4>
+                    <h5 class="mobile-subhead">Find out how to get started</h5>
+                </div>
+                <div class="card-row">
+                    <a href="#" class="info-card">
+                        <img src="img/how-it-works/wallet.webp" alt="Wallet">
+                        <div class="card-detail">
+                            <p class="datail-head">Setup Your wallet</p>
+                            <p class="detail-info">Set up your wallet of choice. Connect it to the NFT market by
+                                clicking the
+                                wallet icon in the
+                                top right corner.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="info-card">
+                        <img src="img/how-it-works/collection.webp" alt="Collection">
+                        <div class="card-detail">
+                            <p class="datail-head">Create Collection</p>
+                            <p class="detail-info">Upload your work and setup your collection. Add a description, social
+                                links
+                                and floor price.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="info-card">
+                        <img src="img/how-it-works/earn.webp" alt="Earn">
+                        <div class="card-detail">
+                            <p class="datail-head">Start Earning</p>
+                            <p class="detail-info">Choose between auctions and fixed-price listings. Start earning by
+                                selling
+                                your NFTs or trading others.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="subscribe-widget animation-up active">
+                <img class="subscribe-widget-img" src="img/subscribe-section/cosmonaut.webp" alt="Cosmonaut">
+                <div class="frame179">
+                    <h4 class="h4-text left">Join our weekly digest</h4>
+                    <div class="subscribe-widget-subhead">Get exclusive promotions &amp; updates straight to your inbox.
+                    </div>
+                    <form class="input-email">
+                        <input class="input-placeholder email-placeholder-text" type="email"
+                            placeholder="enter your email address">
+                        <button type="submit" class="subscribe-button">
+                            <img src="img/subscribe-section/EnvelopeSimple.webp" alt="email">
+                            <span class="subscribe-button-text">Subscribe</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+    <section class="subscribe-widget-tablet animation-up active">
+        <div class="flex-row">
+            <img class="subscribe-widget-tablet-img" src="img/subscribe-section/cosmonaut.webp" alt="Cosmonaut">
+            <div class="frame179">
+                <h4 class="h4-text left">Join our weekly digest</h4>
+                <div class="subscribe-widget-subhead">Get exclusive promotions &amp; updates straight to your inbox.
+                </div>
+                <form class="input-email">
+                    <input class="input-placeholder email-placeholder-text" type="email"
+                        placeholder="enter your email address">
+                    <button type="submit" class="subscribe-button">
+                        <img src="img/subscribe-section/EnvelopeSimple.webp" alt="email">
+                        <span class="subscribe-button-text">Subscribe</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-text">
+        <div class="footer-info">
+            <div class="nft-marketplace-info">
+                <div class="footer-logo">
+                    <div class="footer-storefont">
+                        <img src="img/nav/Storefront.webp" alt="Storefont">
+                    </div>
+                    <div class="footer-sitename">
+                        <img src="img/nav/NFTMarketplace.webp" alt="SiteName">
+                    </div>
+                </div>
+                <p>NFT marketplace UI created with Anima for Figma.</p>
+                <div class="community-info">
+                    <p>Join our community</p>
+                    <div class="community-social">
+                        <a href="#"><img src="img/subscribe-section/DiscordLogo.webp" alt="Discord"></a>
+                        <a href="#"><img src="img/subscribe-section/YoutubeLogo.webp" alt="YouTube"></a>
+                        <a href="#"><img src="img/subscribe-section/TwitterLogo.webp" alt="Twitter"></a>
+                        <a href="#"><img src="img/subscribe-section/InstagramLogo.webp" alt="Instagramm"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="explore">
+                <h5 class="explore-name">explore</h5>
+                <p>Marketplace</p>
+                <p>Rankings</p>
+                <p>Connect a wallet</p>
+            </div>
+            <div class="subscribe">
+                <h5 class="explore-name">Join our weekly digest</h5>
+                <p>Get exclusive promotions &amp; updates straight to your inbox.</p>
+                <div class="subscribe-form subscribe-form-tablet">
+                    <form class="input-email input-email-tablet">
+                        <input class="input-placeholder input-placeholder-tablet email-placeholder-text" type="email"
+                            placeholder="enter your email address">
+                        <button type="submit" class="subscribe-button subscribe-button-tablet">
+                            <img src="img/subscribe-section/EnvelopeSimple.webp" alt="email">
+                            <span class="subscribe-button-text">Subscribe</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="divider-section">
+            <div class="divider"></div>
+        </div>
+        <div class="footer-info">
+            <p>Ⓒ NFT Market. Use this template freely.</p>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

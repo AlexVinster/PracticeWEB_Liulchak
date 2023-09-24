@@ -76,7 +76,9 @@ function getOSInfo(userAgent) {
       } else if (platform === 'macOS') {
         osVersion = userAgent.match(/Mac OS X (\d+[_\.\d]+)/i)[1].replace(/_/g, '.');
       } else if (platform === 'Android') {
+        // Визначення Android
         osVersion = `Android ${userAgent.match(/Android (\d+\.\d+)/i)[1]}`;
+        return `${platform} ${osVersion}`;
       } else if (platform === 'iOS') {
         osVersion = `iOS ${userAgent.match(/OS (\d+[._\d+]*) like Mac OS X/i)[1]}`;
       }

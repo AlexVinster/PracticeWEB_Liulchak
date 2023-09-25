@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Функція для перевірки і включення / вимкнення автоматичної прокрутки
   function checkWindowWidth() {
-      if (window.innerWidth > 1024) {
+      if (window.innerWidth > 767) {
           clearInterval(interval); // Зупинити попередню автоматичну прокрутку (якщо є)
           interval = setInterval(scrollToNextCard, 3000); // Встановити новий інтервал
       } else {
